@@ -8,6 +8,7 @@
 
 .white-bg {
   background: var(--white-color);
+  color: var(--primary-color);
 }
 
 .main-content {
@@ -22,6 +23,7 @@
 
 .menu{
   position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
   right: 0;
@@ -81,7 +83,6 @@
 
 .intro-content{
   position: relative;
-  top: -7rem;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   gap: var(--gap);
@@ -95,14 +96,21 @@
   justify-content: center;
 }
 
-.intro-txt-content h2{
-  font-size: 6rem;
-  margin-bottom: 4rem;
-  text-transform: uppercase;
-  line-height: 1;
+.intro-txt-content {
+
 }
 
-.intro-img img{
+.intro-img img,
+.intro-img svg {
   max-width: 100%;
   height: auto;
+}
+.about{
+  max-width: 80rem;
+  height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
