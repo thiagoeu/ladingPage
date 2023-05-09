@@ -74,3 +74,35 @@
   width: 50%;
   left: 25%;
 }
+
+.menu-spacing {
+  height: 65px;
+}
+
+.intro-content{
+  position: relative;
+  top: -7rem;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: var(--gap);
+  align-items: stretch;
+  height: 100vh;
+}
+
+.intro-txt-content, .intro-img{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.intro-txt-content h2{
+  font-size: 6rem;
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.intro-img img{
+  max-width: 100%;
+  height: auto;
+}
