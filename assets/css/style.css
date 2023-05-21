@@ -168,3 +168,34 @@
  transform: translate(-3%,3%) scale(1.1) rotate(2deg);
 }
 
+.contact-form {
+  grid-column: span 2;
+}
+.contact-form .form-grid{
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.form-group{
+  flex: 1 1 320px;
+}
+.form-group label{
+  display: block;
+}
+
+.form-group input,
+.form-group textarea {
+  border: none;
+  background: var(--light-gray-color);
+  padding: 1.0rem 2rem;
+  width: 100%;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  box-shadow: 2px 2px 5px var(--primary-color);
+}
+
+
